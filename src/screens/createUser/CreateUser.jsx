@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../../components/createUser/Index';
+import Form from '../../components/createUser/Index.jsx';
 
 
 
