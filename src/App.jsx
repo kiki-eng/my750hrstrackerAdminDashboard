@@ -6,7 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MoonIcon from "./assets/icons/moon.svg";
 import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
-import { Dashboard, PageNotFound } from "./screens";
+import { Dashboard, PageNotFound, CustomerInfo } from "./screens";
+import StatisticsScreen from "./screens/statistics/StatisticsScreen";
+import Messages from "./screens/messages/Messages";
+import ManageTeam from "./screens/manageTeam/ManageTeam";
+import CreateUser from "./screens/createUser/CreateUser";
+
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -25,8 +30,14 @@ function App() {
       <Router>
         <Routes>
           <Route element={<BaseLayout />}>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="*" element={<PageNotFound />} />
+          <Route path="/" index element={<Dashboard />} />
+          <Route path="/customerInfo" element={<CustomerInfo />} />
+          <Route path="/statistics" element={<StatisticsScreen />}/>
+          <Route path="/create-user" element={<CreateUser />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/manage-team" element={<ManageTeam />} />
+          
+          <Route path="*" element={<PageNotFound/>}/> 
           </Route>
         </Routes>
 

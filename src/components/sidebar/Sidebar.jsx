@@ -13,7 +13,8 @@ import {
   MdOutlineMessage,
   MdOutlinePeople,
   MdOutlineSettings,
-  MdOutlineShoppingBag,
+  MdPeopleOutline,
+  MdAccountCircle
 } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Sidebar.scss";
@@ -50,7 +51,7 @@ const Sidebar = () => {
       <div className="sidebar-top">
         <div className="sidebar-brand">
           <img src={theme === LIGHT_THEME ? LogoBlue : LogoWhite} alt="" />
-          <span className="sidebar-brand-text">tabernam.</span>
+          <span className="sidebar-brand-text"></span>
         </div>
         <button className="sidebar-close-btn" onClick={closeSidebar}>
           <MdOutlineClose size={24} />
@@ -68,19 +69,37 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <Link to="/customerInfo" className="menu-link">
                 <span className="menu-link-icon">
-                  <MdOutlineBarChart size={20} />
+                  <MdOutlinePeople size={20} />
                 </span>
-                <span className="menu-link-text">Statistics</span>
+                <span className="menu-link-text">CustomerInfo</span>
+              </Link>
+            </li>
+
+            <li className="menu-item">
+              <Link to="/messages" className="menu-link">
+                <span className="menu-link-icon">
+                  <MdOutlineMessage size={18} />
+                </span>
+                <span className="menu-link-text">Messages</span>
+              </Link>
+            </li>
+
+            <li className="menu-item">
+              <Link to="/create-user" className="menu-link">
+                <span className="menu-link-icon">
+                  <MdAccountCircle size={20} />
+                </span>
+                <span className="menu-link-text">Create User</span>
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <Link to="/manage-team" className="menu-link">
                 <span className="menu-link-icon">
-                  <MdOutlineAttachMoney size={20} />
+                  <MdPeopleOutline size={20} />
                 </span>
-                <span className="menu-link-text">Payment</span>
+                <span className="menu-link-text">Manage Team</span>
               </Link>
             </li>
             <li className="menu-item">
@@ -91,30 +110,8 @@ const Sidebar = () => {
                 <span className="menu-link-text">Transactions</span>
               </Link>
             </li>
-            <li className="menu-item">
-              <Link to="/" className="menu-link">
-                <span className="menu-link-icon">
-                  <MdOutlineShoppingBag size={20} />
-                </span>
-                <span className="menu-link-text">Products</span>
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/" className="menu-link">
-                <span className="menu-link-icon">
-                  <MdOutlinePeople size={20} />
-                </span>
-                <span className="menu-link-text">Customer</span>
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/" className="menu-link">
-                <span className="menu-link-icon">
-                  <MdOutlineMessage size={18} />
-                </span>
-                <span className="menu-link-text">Messages</span>
-              </Link>
-            </li>
+            
+            
           </ul>
         </div>
 

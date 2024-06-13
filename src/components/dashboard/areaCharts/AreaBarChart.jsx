@@ -134,7 +134,7 @@ const AreaBarChart = () => {
             />
             <Bar
               dataKey="profit"
-              fill="#475be8"
+              fill="#003889"
               activeBar={false}
               isAnimationActive={false}
               barSize={24}

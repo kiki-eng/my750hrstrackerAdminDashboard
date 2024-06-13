@@ -14,56 +14,56 @@ const TABLE_HEADS = [
 const TABLE_DATA = [
   {
     id: 100,
-    name: "Iphone 13 Pro",
+    name: "Yearly Subscription",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
-    status: "delivered",
-    amount: 400,
+    date: "Sep 29,2024",
+    customer: "Oscar",
+    status: "Active",
+    amount: 199,
   },
   {
     id: 101,
-    name: "Macbook Pro",
+    name: "Monthly subscription",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
+    date: "Feb 2,2024",
+    customer: "Abosede Olawale",
     status: "pending",
     amount: 288,
   },
   {
     id: 102,
-    name: "Apple Watch",
+    name: "Free Subscriber",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
+    date: "Jan 9,2024",
+    customer: "James Nwachukwu",
     status: "canceled",
     amount: 500,
   },
   {
     id: 103,
-    name: "Microsoft Book",
+    name: "Yearly Subscription",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
-    status: "delivered",
+    date: "Jan 29,2024",
+    customer: "Rachel Olawale",
+    status: "Active",
     amount: 100,
   },
   {
     id: 104,
-    name: "Apple Pen",
+    name: "Free Subscriber",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
-    status: "delivered",
+    date: "July 15,2024",
+    customer: "Khadijat babatunde",
+    status: "Canceled",
     amount: 60,
   },
   {
     id: 105,
-    name: "Airpods",
+    name: "Monthly Subscribers",
     order_id: 11232,
-    date: "Jun 29,2022",
-    customer: "Afaq Karim",
-    status: "delivered",
+    date: "Aug 21,2024",
+    customer: "Olawale Olanrewaju",
+    status: "Pending",
     amount: 80,
   },
 ];
@@ -72,7 +72,7 @@ const AreaTable = () => {
   return (
     <section className="content-area-table">
       <div className="data-table-info">
-        <h4 className="data-table-title">Latest Orders</h4>
+        <h4 className="data-table-title">Order Details</h4>
       </div>
       <div className="data-table-diagram">
         <table>
